@@ -63,7 +63,7 @@ class Rectangle:
                 st += str(str(self.print_symbol) * self.__width + '\n')
                 h += 1
         return st[:-1]
-    
+
     def __repr__(self):
         """returns representation of a rectangle"""
         return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
@@ -81,6 +81,7 @@ class Rectangle:
                             ('rect_2' if isinstance(rect_1, Rectangle)
                              else 'rect_1'))
         return rect_1 if rect_1.area() >= rect_2.area() else rect_2
+
     @classmethod
     def square(cls, size=0):
         """returns a square""""
