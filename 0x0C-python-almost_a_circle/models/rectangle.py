@@ -74,20 +74,21 @@ class Rectangle(Base):
 
     def display(self):
         """ print the Rectangle instance with # signs """
-        print(("\n" * self.y) + "\n".join((" " * self.x) + ("#" * self.width) for i in range(self.height)))
+        print(("\n" * self.y) + "\n".join((" " * self.x) + ("#" * self.width)
+                                          for i in range(self.height)))
 
     def __str__(self):
         """ Prints the informal string of the instance """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
-                                                                self.x,
-                                                                self.y,
-                                                                self.width,
-                                                                self.height)
+                                                                 self.x,
+                                                                 self.y,
+                                                                 self.width,
+                                                                 self.height)
 
     def update(self, *args, **kwargs):
         """ update atributes based on args """
         if len(args):
-            for i, j in enumerate (args):
+            for i, j in enumerate(args):
                 if i == 0:
                     self.id = j
                 elif i == 1:

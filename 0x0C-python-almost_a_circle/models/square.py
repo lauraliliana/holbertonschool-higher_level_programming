@@ -1,5 +1,9 @@
+  
 #!/usr/bin/python3
-""" Module of a class Square """
+"""
+This module contains the "Square" class
+"""
+
 from models.rectangle import Rectangle
 
 
@@ -27,31 +31,32 @@ class Square(Rectangle):
                                                          self.y, self.width)
 
     def update(self, *args, **kwargs):
-        """ update atributes based on args """
+        """update attributes"""
         if len(args):
-            for i, j in enumerate (args):
+            for i, a in enumerate(args):
                 if i == 0:
-                    self.id = j
+                    self.id = a
                 elif i == 1:
-                    self.size = j
+                    self.size = a
                 elif i == 2:
-                    self.x = j
+                    self.x = a
                 elif i == 3:
-                    self.y = j
+                    self.y = a
         else:
             if "id" in kwargs:
                 self.id = kwargs["id"]
             if "size" in kwargs:
-                self.width = kwargs["size"]
+                self.size = kwargs["size"]
             if "x" in kwargs:
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        dt = {}
-        dt["id"] = self.id
-        dt["size"] = self.size
-        dt["x"] = self.x
-        dt["y"] = self.y
-        return dt
+        """dictionary representation of a Square"""
+        d = {}
+        d["id"] = self.id
+        d["size"] = self.size
+        d["x"] = self.x
+        d["y"] = self.y
+        return d
