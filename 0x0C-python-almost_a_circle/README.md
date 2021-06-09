@@ -8,9 +8,9 @@
 - What is **kwargs and how to use it  
 - How to handle named arguments in a function  
 ### Contributors:  
-- Jorge Rodriguez <jrodriguez9510@outlook.com>  
+- Laura Valencia  
 ---  
 ### License & Copyright  
-© Jorge Rodriguez 2021  
+© Laura Valencia
   
 Licensed under the [MIT Licence](LICENSE)  
