@@ -13,9 +13,9 @@
 - What are subqueries  
 - How to use MySQL functions    
 ### Contributors:  
-- Jorge Rodriguez <jrodriguez9510@outlook.com>  
+- Laura Valencia <lauraliliana@gmail.com>  
 ---  
 ### License & Copyright  
-© Jorge Rodriguez 2021  
-  
+© Laura Valencia 2021  
+
 Licensed under the [MIT Licence](LICENSE)  
